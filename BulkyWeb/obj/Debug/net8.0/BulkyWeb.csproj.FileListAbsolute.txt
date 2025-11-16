@@ -266,3 +266,4 @@ D:\dev\mvc\project\Bulky\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.dll
 D:\dev\mvc\project\Bulky\BulkyWeb\bin\Debug\net8.0\Bulky.Models.dll
 D:\dev\mvc\project\Bulky\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.pdb
 D:\dev\mvc\project\Bulky\BulkyWeb\bin\Debug\net8.0\Bulky.Models.pdb
+D:\dev\mvc\project\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.MvcApplicationPartsAssemblyInfo.cs
