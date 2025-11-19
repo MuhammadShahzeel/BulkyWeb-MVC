@@ -13,35 +13,46 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
         public ProductController(IUnitOfWork unitOfWork)
         {
+
             _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-
             List<Product> objProductList = _unitOfWork.Product.GetAll().ToList();
-
-
 
             return View(objProductList);
         }
-        public IActionResult Create()
+
+        public IActionResult Upsert(int? id)
         {
             ProductVM productVM = new ProductVM()
             {
                 Product = new Product(),
-                // projection
                 CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
                 {
                     Text = i.Name,
                     Value = i.Id.ToString()
                 })
             };
+            if (id == null || id == 0)
+            {
+                //this is for create
+                return View(productVM);
+            }
+            else
+            {
+                //this is for edit
+                productVM.Product = _unitOfWork.Product.Get(u => u.Id == id);
+                if (productVM.Product == null)
+                {
+                    return NotFound();
+                }
+                return View(productVM);
+            }
 
-            return View(productVM);
         }
-
         [HttpPost]
-        public IActionResult Create(ProductVM productVM)
+        public IActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
 
 
@@ -66,39 +77,16 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
 
         }
-        public IActionResult Edit(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            Product? productFromDb = _unitOfWork.Product.Get(u => u.Id == id);
-            if (productFromDb == null)
-            {
-                return NotFound();
-            }
-            return View(productFromDb);
-        }
-        [HttpPost]
-        public IActionResult Edit(Product obj)
-        {
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.Product.Update(obj);
-                _unitOfWork.Save();
-                TempData["success"] = "Product updated successfully!";
-                return RedirectToAction("Index");
-            }
-            return View();
-        }
+
+
         public IActionResult Delete(int id)
         {
-            var Product = _unitOfWork.Product.Get(u => u.Id == id);
-            if (Product == null)
+            var product = _unitOfWork.Product.Get(u => u.Id == id);
+            if (product == null)
             {
                 return NotFound();
             }
-            return View(Product);
+            return View(product);
         }
 
         [HttpPost, ActionName("Delete")]
@@ -112,9 +100,8 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
             _unitOfWork.Product.Remove(obj);
             _unitOfWork.Save();
-            TempData["success"] = "Product deleted successfully!";
+            TempData["success"] = "Product deleted successfully";
             return RedirectToAction("Index");
         }
-
     }
 }
