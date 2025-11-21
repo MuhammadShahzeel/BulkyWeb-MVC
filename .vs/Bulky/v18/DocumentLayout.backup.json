@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\dev\\mvc\\project\\Bulky\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C717EE87-A5F3-4CA4-9CB1-B5C963F9EE5F}|BulkyWeb\\BulkyWeb.csproj|d:\\dev\\mvc\\project\\bulky\\bulkyweb\\areas\\admin\\views\\product\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C717EE87-A5F3-4CA4-9CB1-B5C963F9EE5F}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\admin\\views\\product\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{408C0CE9-EC22-4797-A9C3-3FD144797BF2}|Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\dev\\mvc\\project\\bulky\\bulky.dataaccess\\repository\\productrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408C0CE9-EC22-4797-A9C3-3FD144797BF2}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\productrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C717EE87-A5F3-4CA4-9CB1-B5C963F9EE5F}|BulkyWeb\\BulkyWeb.csproj|d:\\dev\\mvc\\project\\bulky\\bulkyweb\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C717EE87-A5F3-4CA4-9CB1-B5C963F9EE5F}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C717EE87-A5F3-4CA4-9CB1-B5C963F9EE5F}|BulkyWeb\\BulkyWeb.csproj|d:\\dev\\mvc\\project\\bulky\\bulkyweb\\areas\\admin\\views\\product\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C717EE87-A5F3-4CA4-9CB1-B5C963F9EE5F}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\admin\\views\\product\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C717EE87-A5F3-4CA4-9CB1-B5C963F9EE5F}|BulkyWeb\\BulkyWeb.csproj|d:\\dev\\mvc\\project\\bulky\\bulkyweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,13 +106,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductRepository .cs",
               "DocumentMoniker": "D:\\dev\\mvc\\project\\Bulky\\Bulky.DataAccess\\Repository\\ProductRepository .cs",
               "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\ProductRepository .cs",
-              "ToolTip": "D:\\dev\\mvc\\project\\Bulky\\Bulky.DataAccess\\Repository\\ProductRepository .cs",
-              "RelativeToolTip": "Bulky.DataAccess\\Repository\\ProductRepository .cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "ToolTip": "D:\\dev\\mvc\\project\\Bulky\\Bulky.DataAccess\\Repository\\ProductRepository .cs*",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\ProductRepository .cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwCkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T21:12:02.488Z",
               "EditorCaption": ""
@@ -142,29 +142,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Upsert.cshtml",
               "DocumentMoniker": "D:\\dev\\mvc\\project\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
               "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
-              "ToolTip": "D:\\dev\\mvc\\project\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
-              "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "ToolTip": "D:\\dev\\mvc\\project\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml*",
+              "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-15T22:44:56.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\dev\\mvc\\project\\Bulky\\BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\dev\\mvc\\project\\Bulky\\BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs*",
-              "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs*",
+              "ToolTip": "D:\\dev\\mvc\\project\\Bulky\\BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAADwv18AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T00:25:23.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T00:25:23.513Z"
             },
             {
               "$type": "Document",
