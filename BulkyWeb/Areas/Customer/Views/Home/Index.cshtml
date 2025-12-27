@@ -52,7 +52,13 @@
 
                     <!-- Card Footer -->
                     <div class="card-footer bg-white border-0">
-                        <a class="btn btn-outline-primary w-100">
+                        <a asp-area="Customer"
+                           asp-controller="Home"
+                           asp-action="Details"
+                           asp-route-id="@product.Id"
+                            
+                            
+                            class="btn btn-outline-primary w-100">
                             View Details
                         </a>
                     </div>
