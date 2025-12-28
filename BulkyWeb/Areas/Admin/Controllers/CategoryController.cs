@@ -1,6 +1,4 @@
-﻿
-using Bulky.DataAccess.Data;
-using Bulky.DataAccess.Repository.IRepository;
+﻿using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,7 +21,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
         }
         public IActionResult Create()
         {
-  
+
             return View();
         }
 
@@ -43,7 +41,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
                 TempData["success"] = "Category created successfully!";
                 return RedirectToAction("Index");
             }
-            
+
             return View();
 
 
@@ -54,7 +52,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-             Category? categoryFromDb = _unitOfWork.Category.Get(u=>u.Id == id);
+            Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
             if (categoryFromDb == null)
             {
                 return NotFound();

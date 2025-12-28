@@ -69,7 +69,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
                     // to handleupdate if image is already there and user is uploading new image then delete old image and add new image 
                     if (!string.IsNullOrEmpty(productVM.Product.ImageUrl))
                     {
-                        
+
                         var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
                         if (System.IO.File.Exists(oldImagePath))
                         {
@@ -93,7 +93,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
                 {
                     _unitOfWork.Product.Update(productVM.Product);
                 }
-                
+
                 _unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
@@ -122,7 +122,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
         {
             List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
 
-            return Json(new { data = objProductList } );
+            return Json(new { data = objProductList });
         }
 
 

@@ -19,13 +19,13 @@ namespace BulkyWeb.Areas.Customer.Controllers
 
         public IActionResult Index()
         {
-            List<Product> productList = _unitOfWork.Product.GetAll(includeProperties:"Category").ToList();
+            List<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
             return View(productList);
         }
 
         public IActionResult Details(int id)
         {
-            Product product = _unitOfWork.Product.Get(u=>u.Id==id,includeProperties: "Category");
+            Product product = _unitOfWork.Product.Get(u => u.Id == id, includeProperties: "Category");
             return View(product);
         }
 
