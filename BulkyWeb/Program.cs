@@ -20,6 +20,27 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+// Configure authentication cookie redirect paths.
+// By default ASP.NET Core redirects unauthorized users to /Account/Login.
+// Since ASP.NET Core Identity uses Areas and its pages live under
+// /Identity/Account/*, we explicitly tell the application where to redirect
+// users for login, logout, and access denied scenarios.
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    // Redirect here when a user tries to access a protected resource
+    // but is not authenticated (not logged in)
+    options.LoginPath = "/Identity/Account/Login";
+
+    // Redirect here after a user logs out
+    options.LogoutPath = "/Identity/Account/Logout";
+
+    // Redirect here when a logged-in user does not have the required
+    // role or permission to access a resource
+    options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+});
+
+
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
